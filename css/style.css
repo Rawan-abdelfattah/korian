@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+:root{
+   --green-color:#20c997;
+   --section-color: #f8f9fa;
+}
+.color{
+    color: var(--green-color);
+}
+.iconUp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    cursor: pointer;
+    display: none;
+}
+.container , .navbar{
+    transition: all .5s ;
+}
+section{
+    padding: 80px 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family:'Poppins'; */
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: white;
+
+}
+.navbar-expand-lg .navbar-nav .nav-link.active{
+    color: var(--green-color);
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+.main{
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    color: white;
+    background: linear-gradient(to top,rgba(0,0,0,0.5) 50% ,rgba(0,0,0,0.5) 50%),url(../images/intro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 150px;
+    font-size: 25px;
+}
+.main p{
+    padding-bottom: 50px;
+
+}
+.main h1{
+    padding-bottom: 15px;
+    font-size:70px;
+
+}
+.main-btn{
+    /* all: unset; */
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: transparent;
+    border-color: #20c997;
+    color: #20c997;
+    cursor: pointer;
+
+}
+.main-btn:hover{
+    background-color:#20c997 ;
+    color: white;
+    transition: 0.7s;
+
+
+}
+
+.main-btn1{
+    all: unset;
+    background-color: var(--green-color);
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid var(--green-color);
+    transition: all .5s;
+    cursor: pointer;
+}
+.main-btn1:hover{
+    background-color: transparent;
+    border-color: var(--green-color);
+    color: var(--green-color);
+}
+#about .main-title h2 ,#what-i-do .main-title h2{
+    
+    font-size: 6rem;
+    color:#dee3e478 ;
+    position: relative;
+    text-transform:uppercase;
+}
+#about .main-title h3 ,#what-i-do .main-title h3{
+    font-size: 2.5rem;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#about .main-title h2::after ,#what-i-do .main-title h2::after{
+    content: "";
+    width: 90px;
+    border-bottom: 3px solid var(--green-color);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+
+}
+#about .text{
+    border-right: 3px solid rgba(128, 128, 128, 0.09);
+    padding: 20px;
+
+
+}
+#what-i-do , #resume , #client{
+    background-color: var(--section-color);
+}
+
+#resume .resume-card{
+    border: 2px solid rgba(0, 0, 0, 0.218);
+    border-radius: 4px;
+    background-color: white;
+}
+#resume .resume-year{ 
+    background-color: #20c997;
+    height: 25px;
+    width: 120px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portifolio-icons p{
+    display: inline;
+    /* position: absolute; */
+    
+    
+}
+.portifolio-icons .p2{
+    padding-left:495px;
+
+}
+.portifolio-icons-big{
+    background: rgba(128, 128, 128, 0.289);
+    height: 10px;
+    border-radius: 50px; 
+
+}
+.portifolio-icons-small{
+    background-color: #20c997; 
+    height: 10px; 
+    width: 100px; 
+    border-radius: 50px 0 0 50px;
+}
+#client ul{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    cursor: pointer;
+    
+}
+#client ul li{
+    all: unset;
+    margin: 30px;
+    transition: color .5s;
+}
+#client ul li:hover{
+    color: var(--green-color);
+}
